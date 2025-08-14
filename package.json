@@ -25,5 +25,9 @@
     "eslint-config-next": "15.4.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "lightningcss": "^1.19.0",
+    "@parcel/css": "^1.19.0"
   }
 }
