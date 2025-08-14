@@ -225,7 +225,7 @@ const Portfolio = () => {
           </p>
           <div className="flex justify-center gap-6">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:jason.lee.cultrans@gmail.com"
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
             >
               <Mail size={20} />
