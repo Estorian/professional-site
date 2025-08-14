@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Calendar, Award, Code, Database, Server, Smartphone } from 'lucide-react';
+import Link from 'next/link';
+import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Calendar, Award, Code, Database, Server} from 'lucide-react';
 import Starfield from '@/components/Starfield/Starfield';
 
 const ResumePage = () => {
@@ -103,9 +104,9 @@ const ResumePage = () => {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 backdrop-blur-md transition-colors duration-300 ${darkMode ? 'bg-gray-900/80' : 'bg-white/80'} border-b ${darkMode ? 'border-gray-800' : 'border-gray-200'} relative`}>
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <Link href="/" className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Portfolio
-          </a>
+          </Link>
           <div className="flex items-center gap-6">
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -113,11 +114,11 @@ const ResumePage = () => {
             >
               {darkMode ? '☀️' : '🌙'}
             </button>
-            <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
-            <a href="/#about" className="hover:text-blue-600 transition-colors">About</a>
-            <a href="/#projects" className="hover:text-blue-600 transition-colors">Projects</a>
+            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/#about" className="hover:text-blue-600 transition-colors">About</Link>
+            <Link href="/#projects" className="hover:text-blue-600 transition-colors">Projects</Link>
             <span className="text-blue-600 font-medium">Resume</span>
-            <a href="/#contact" className="hover:text-blue-600 transition-colors">Contact</a>
+            <Link href="/#contact" className="hover:text-blue-600 transition-colors">Contact</Link>
           </div>
         </div>
       </nav>

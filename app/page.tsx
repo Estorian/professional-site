@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Database, Server, Smartphone, Palette, Brain, Building, Braces, Ampersand, Rocket, MountainSnow } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Server, Brain, Building, Braces, MountainSnow } from 'lucide-react';
 import Starfield from '@/components/Starfield/Starfield';
 import Navigation from '@/components/Navigation/Navigation';
 
@@ -18,7 +18,7 @@ const Portfolio = () => {
       setCurrentRole((prev) => (prev + 1) % roles.length);
     }, 3000);
     return () => clearInterval(roleInterval);
-  }, []);
+  }, [roles.length]);
 
   const skills = [
     { name: 'Frontend', icon: Code, color: 'text-blue-500', items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Angular'] },
@@ -72,7 +72,7 @@ const Portfolio = () => {
             <MountainSnow size={150}/>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Hi, I'm{' '}
+            Hi, I&apos;m &nbsp;
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
              Jason Lee
             </span>
@@ -128,7 +128,7 @@ const Portfolio = () => {
             </span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <div
                 key={skill.name}
                 className={`p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${darkMode ? 'bg-gray-900 hover:shadow-gray-900/50' : 'bg-white hover:shadow-gray-300/50'}`}
@@ -159,7 +159,7 @@ const Portfolio = () => {
             </span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div
                 key={project.title}
                 className={`rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${darkMode ? 'bg-gray-800 hover:shadow-gray-900/50' : 'bg-white hover:shadow-gray-300/50'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}
@@ -216,12 +216,12 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Let's Work Together
+              Let&apos;s Work Together
             </span>
           </h2>
           <p className={`text-xl mb-12 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            I'm always interested in new opportunities and exciting projects. 
-            Let's discuss how we can bring your ideas to life.
+            I&apos;m always interested in new opportunities and exciting projects. 
+            Let&apos;s discuss how we can bring your ideas to life.
           </p>
           <div className="flex justify-center gap-6">
             <a
