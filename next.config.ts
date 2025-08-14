@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
+  },
+  experimental: {
+    optimizeCss: false
+  },
+  optimizeFonts: false,
+  swcMinify: false,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production"
   }
 };
 
