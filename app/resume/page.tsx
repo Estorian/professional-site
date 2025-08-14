@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Calendar, Award, Code, Database, Server, Smartphone } from 'lucide-react';
-import Starfield from '../../components/Starfield/Starfield';
+import Starfield from '@/components/Starfield/Starfield';
 
 const ResumePage = () => {
   const [darkMode, setDarkMode] = useState(true);

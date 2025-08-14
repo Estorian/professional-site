@@ -5,9 +5,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  basePath: "/professional-site/portfolio",
-  assetPrefix: "/professional-site/portfolio"
+  }
 };
 
 export default nextConfig;
